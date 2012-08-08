@@ -1,15 +1,15 @@
 define.py
 =========
 
-Word definitions from your command line!
+Word definitions from your command line! (using Python)
 
-##Installation
+###Installation
 
     $ wget http://raw.github.com/hardikr/define.py/master/define.py -O /tmp/define
     $ sudo cp /tmp/define /usr/local/bin/ # or /usr/bin
-    $ sudo chmod +x /usr/loca/bin/define
+    $ sudo chmod +x /usr/local/bin/define
     
-##Usage
+###Usage
 
     $ define hello
     
@@ -19,6 +19,6 @@ Word definitions from your command line!
     4) Used as a cry to attract someone attention
     5) Expressing sarcasm or anger
 
-##Notes
+###Notes
 
 Uses Google's unofficial Definitions API (see code). May break :-/
