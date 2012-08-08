@@ -1,14 +1,16 @@
+#!/usr/bin/env python
+
 import re
 import json
 import sys
-import requests
+import urllib2
 
 if len(sys.argv)==1:
   print 'Please tell me a word to define.\nUsage: python define.py vertigo'
   exit(0)
 
-r = requests.get("http://www.google.com/dictionary/json?callback=a&sl=en&tl=en&q="+sys.argv[1])
-res = r.text
+r = urllib2.urlopen("http://www.google.com/dictionary/json?callback=a&sl=en&tl=en&q="+sys.argv[1])
+res = r.read()
 
 prefix = 'a('
 suffix = ',200,null)'
