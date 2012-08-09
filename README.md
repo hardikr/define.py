@@ -21,4 +21,4 @@ Word definitions from your command line! (using Python)
 
 ###Notes
 
-Uses Google's unofficial Definitions API (see code). May break :-/
+Uses Google's undocumented Definitions API (see code). May break some time in the future :-/
